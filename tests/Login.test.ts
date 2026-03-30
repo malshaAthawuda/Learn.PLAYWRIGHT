@@ -13,6 +13,8 @@ test("loging test demo", async ({ page }) => {
 
 });
 
+//****Normally we use the const browser, context and the page *****/
+
 // import { chromium, test } from "@playwright/test";
 //     const browser = await chromium.launch({
 //         headless: false
