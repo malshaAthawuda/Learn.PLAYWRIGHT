@@ -20,6 +20,14 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: ' My account' }).hover();
   //await page.hover("//a[@data-toogle='dropdown']//sapn[contains(.,'My account')]");
   await page.getByRole('link', { name: 'Logout', exact: true }).click();
+  
 });
+
+//increase timeout
+test('very slow test', async ({ page }) => {
+  test.setTimeout(120000);
+  // ...
+});
+
 
 
