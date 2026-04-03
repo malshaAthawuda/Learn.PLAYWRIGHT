@@ -18,6 +18,8 @@ const config :PlaywrightTestConfig= {
      screenshot : "only-on-failure",  //add screenshot and video to the report
      video : "retain-on-failure",
   },
+  //if fail the test then retry that test (use for this --- Slow loading, UI Network delays, Timing issues)
+  retries : 2,
   reporter: [["dot"],["json", {
     outputFile: "jsonReports/jsonReport.json" //1 . folder name and then 2. file name 
   }], ["html", {

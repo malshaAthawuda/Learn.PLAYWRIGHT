@@ -26,7 +26,6 @@ test('test', async ({ page }) => {
 //increase timeout
 test('very slow test', async ({ page }) => {
   test.setTimeout(120000);
-  // ...
 });
 
 
